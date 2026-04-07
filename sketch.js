@@ -3,7 +3,9 @@ let myInput, myButton,stringLength,allCaps;
 function stringStuff(){
   let theirWord = myInput.value()//local variable used to grab their Word
   stringLength = theirWord.length;
-  allCaps =  theirWord.charAt(0).toUpperCase();
+  for(let i = 0 ; i < theirWord.length ; i++){
+    allCaps += theirWord.charAt(i).toUpperCase();
+  }
 }
 //--PreBuilt p5js functions--------------
 function setup() {
