@@ -19,5 +19,5 @@ function draw() {
 }
 //---------------------------------------
 function stringStuff(){
-  console.log("hi")
+  stringLength = myInput.value().length
 }
