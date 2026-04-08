@@ -3,8 +3,10 @@ let myInput, myButton,stringLength,allCaps;
 function stringStuff(){
   let theirWord = myInput.value()//local variable used to grab their Word
   stringLength = theirWord.length;
+  allCaps = ""
   for(let i = 0 ; i < theirWord.length ; i++){
     allCaps += theirWord.charAt(i).toUpperCase();
+    //add a line to make it all lower case
   }
 }
 //--PreBuilt p5js functions--------------
@@ -24,5 +26,6 @@ function draw() {
   text("Work with Strings", 10,10)
   text("The length of your word is: " + stringLength,20,60)
   text("Your word all caps is : " + allCaps,20,80)
+  //add another text to output all lowercase
 }
 //---------------------------------------
