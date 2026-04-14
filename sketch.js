@@ -14,7 +14,19 @@ function getVowels(theirW){
     //if a is in their word, this will be true.
     vowelList += 'e, '
   }
-  return vowelList
+   if(theirW.indexOf('i')  != -1){
+    //if a is in their word, this will be true.
+    vowelList += 'i, '
+  }
+  if(theirW.indexOf('o')  != -1){
+    //if a is in their word, this will be true.
+    vowelList += 'o, '
+  }
+  if(theirW.indexOf('u')  != -1){
+    //if a is in their word, this will be true.
+    vowelList += 'u, '
+  }
+  return vowelList.substring(0,vowelList.length-2)
 }
 function stringStuff(){
   let theirWord = myInput.value()//local variable used to grab their Word
