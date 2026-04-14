@@ -6,7 +6,7 @@ function getVowels(theirW){
   //meaning only this function can see it or use it.
   
   let vowelList = ""
-  if(theirW.indexOf('a')  != -1){
+  if(theirW.indexOf('a')  != -1 || theirW.indexOf('A')  != -1 ){
     //if a is in their word, this will be true.
     vowelList += 'a, '
   }
